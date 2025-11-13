@@ -2,10 +2,175 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Le Skål Bar</title>
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Skål Bar - Bar à thème - La Bassée</title>
+    <meta name="description" content="Le Skål Bar vous accueil avec la bonne humeur et le sourire ! Bar à thèmes le week end, bières, cocktails et bonne ambiance.">
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous" defer></script> </head>
 <body>
-    <h1>Test du site Le Skål Bar</h1>
-    <p>Le site est en construction !</p>
-</body>
+
+    <header>
+        <nav class="container">
+            <a href="#" class="logo">
+                <span>Le Skål Bar</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#about">Le Bar</a></li>
+                <li><a href="#menu">La Carte</a></li>
+                <li><a href="#events">Événements</a></li>
+                <li><a href="#contact" class="btn btn-primary">Contact</a></li>
+            </ul>
+            <button id="nav-toggle" aria-label="Ouvrir la navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="hero">
+            <div class="hero-content container">
+                <h1>Bienvenue au Skål Bar</h1>
+                <p>Votre nouveau bar à thèmes à La Bassée.<br>Essayer c'est nous adopter !</p>
+                <a href="#menu" class="btn btn-secondary">Voir la carte</a>
+            </div>
+        </section>
+
+        <section id="about" class="container">
+            <h2><span class="highlight">Le Skål Bar</span>, c'est avant tout...</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>...la bonne humeur et le sourire !</h3>
+                    <p>Le SKÅL Bar vous accueil avec la bonne humeur et le sourire 😆!!!!</p>
+                    <p>Un bar à thèmes le week end, essayer c'est nous adopter 🥳🎉😉.</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Nourriture extérieure autorisée</li>
+                        <li><i class="fas fa-cocktail"></i> Excellents cocktails</li>
+                        <li><i class="fas fa-sun"></i> Terrasse</li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <img src="https://via.placeholder.com/450x350" alt="Intérieur du Skål Bar">
+                </div>
+            </div>
+        </section>
+
+        <section id="menu">
+            <div class="container">
+                <h2>Notre Carte</h2>
+                <div class="menu-grid">
+                    <article class="menu-category">
+                        <h3>Bières Pression</h3>
+                        <ul>
+                            <li>Bière Blonde A <span class="price">5,00€</span></li>
+                            <li>Bière Ambrée B <span class="price">5,50€</span></li>
+                            <li>Bière Brune C <span class="price">6,00€</span></li>
+                            <li>Bière du Moment <span class="price">6,50€</span></li>
+                        </ul>
+                    </article>
+                    <article class="menu-category">
+                        <h3>Cocktails</h3>
+                        <ul>
+                            <li>Mojito <span class="price">8,00€</span></li>
+                            <li>Spritz <span class="price">7,50€</span></li>
+                            <li>Gin Tonic <span class="price">8,00€</span></li>
+                            <li>Cocktail "Skål" <span class="price">9,00€</span></li>
+                        </ul>
+                    </article>
+                    <article class="menu-category">
+                        <h3>Softs</h3>
+                        <ul>
+                            <li>Coca-Cola <span class="price">3,50€</span></li>
+                            <li>Jus d'Orange <span class="price">3,50€</span></li>
+                            <li>Limonade <span class="price">3,00€</span></li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="events" class="container">
+            <h2>Nos Événements à Venir</h2>
+            <div class="events-grid">
+                <article class="event-card">
+                    <img src="https://via.placeholder.com/400x250" alt="Soirée à thème">
+                    <div class="event-content">
+                        <time datetime="2025-11-20">20 Nov. 2025</time>
+                        <h3>Soirée Années 80</h3>
+                        <p>Ressortez vos plus belles tenues fluo !</p>
+                    </div>
+                </article>
+                <article class="event-card">
+                    <img src="https://via.placeholder.com/400x250" alt="Concert">
+                    <div class="event-content">
+                        <time datetime="2025-11-27">27 Nov. 2025</time>
+                        <h3>Concert Live : Les Vikings</h3>
+                        <p>Du rock qui déménage pour fêter le weekend.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2>Nous Trouver</h2>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3>Adresse</h3>
+                        <p>
+                            4 Pl. du Général de Gaulle,<br>
+                            59480 La Bassée
+                        </p>
+                        
+                        <h3>Horaires d'Ouverture</h3>
+                        <ul class="horaires">
+                            <li>Mardi - Jeudi: <span class="time">17h00 - 00h00</span></li>
+                            <li>Vendredi: <span class="time">17h00 - 01h00</span></li>
+                            <li>Samedi: <span class="time">15h00 - 01h00</span></li>
+                            <li>Dimanche: <span class="time">15h00 - 22h00</span></li>
+                            <li>Lundi: <span class="time">Fermé</span></li>
+                        </ul>
+                        <a href="tel:+33XXXXXXXXX" class="btn btn-primary">Appeler</a> </div>
+                    <div class="contact-map">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2543.914170364951!2d2.80931167688229!3d50.53128157161048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47dd2521976a1617%3A0xe54955db36bdc813!2s4%20Pl.%20du%20G%C3%A9n%C3%A9ral%20de%20Gaulle%2C%2059480%20La%20Bass%C3%A9e%2C%20France!5e0!3m2!1sfr!2sus!4v1731513904689!5m2!1sfr!2sus" 
+                            width="600" 
+                            height="450" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <h3>Le Skål Bar</h3>
+                <p>4 Pl. du Général de Gaulle, 59480 La Bassée</p>
+                <ul class="social-links">
+                    <li><a href="https...facebook..." aria-label="Suivez-nous sur Facebook" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https...instagram..." aria-label="Suivez-nous sur Instagram" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Le Skål Bar. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    </body>
 </html>
