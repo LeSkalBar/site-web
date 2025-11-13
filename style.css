@@ -160,7 +160,7 @@ header nav {
     justify-content: center;
     text-align: center;
     padding-top: var(--header-height); /* Pour ne pas être sous le header */
-    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://via.placeholder.com/1920x1080'); /* Mettre une belle image de fond */
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('./images/hero-background.jpg'); 
     background-size: cover;
     background-position: center;
 }
