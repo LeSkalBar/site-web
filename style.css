@@ -382,3 +382,14 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+.hero-logo {
+    width: 150px; 
+    height: auto;
+    margin-bottom: 1.5rem; 
+    filter: drop-shadow(0 0 10px rgba(0,0,0,0.7)); 
+}
+
+.hero-content h1 {
+    font-size: 3.5rem; 
+}
