@@ -464,3 +464,116 @@ footer {
         line-height: 1.2;
     }
 }
+
+/* =================== ACCORDÉON MENU (VOIR PLUS) =================== */
+
+/* La classe qui cache les éléments (ajoutée par JS) */
+.hidden-item {
+    display: none !important;
+}
+
+/* Le bouton "Voir la suite" */
+.expand-btn {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    cursor: pointer;
+    color: var(--color-primary);
+    font-weight: 700;
+    font-size: 0.9rem;
+    font-family: var(--font-title);
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.expand-btn:hover {
+    color: var(--color-white);
+}
+
+.expand-btn i {
+    margin-right: 5px;
+    transition: transform 0.3s ease;
+}
+
+/* Quand le menu est ouvert, la flèche tourne */
+.expand-btn.open i {
+    transform: rotate(180deg);
+}
+
+
+/* =================== CARROUSEL ÉVÉNEMENTS =================== */
+
+.carousel-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.events-slider {
+    display: flex;
+    gap: 2rem; /* Espace entre les cartes */
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-bottom: 1rem;
+    
+    /* L'EFFET AIMANT (Scroll Snap) */
+    scroll-snap-type: x mandatory;
+    
+    /* Cache la scrollbar */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.events-slider::-webkit-scrollbar {
+    display: none;
+}
+
+.event-card {
+    /* CALCUL MAGIQUE POUR 2 CARTES : (100% / 2) - (Gap / 2) */
+    min-width: calc(50% - 1rem); 
+    flex: 0 0 auto;
+    
+    /* L'alignement de l'aimant */
+    scroll-snap-align: start;
+    
+    background-color: var(--color-bg-medium);
+    border: 1px solid #444;
+}
+
+/* Style des Flèches */
+.slider-btn {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    font-size: 1.2rem;
+    z-index: 10;
+    flex-shrink: 0;
+}
+
+.slider-btn:hover {
+    background-color: #fff;
+    color: var(--color-primary);
+    transform: scale(1.1);
+}
+
+/* Sur mobile, on peut cacher les flèches et laisser scroller au doigt */
+@media (max-width: 768px) {
+    .slider-btn {
+        display: none;
+    }
+    .carousel-wrapper {
+        display: block; /* Enlève le flex pour laisser toute la place */
+    }
+    .events-slider {
+        padding-right: 1.5rem; /* Petit espace à la fin */
+    }
+}
